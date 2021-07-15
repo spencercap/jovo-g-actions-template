@@ -30,6 +30,15 @@ app.setHandler({
 	},
 
 	MyNameIsIntent() {
+		// this.$googleAction!.htmlResponse({
+		// 	data: {
+		// 		state: 'MyNameIsIntent',
+		// 		text: 'Hey ' + this.$inputs.name.value + ', nice to meet you!',
+		// 	},
+		// 	suppressMic: false,
+		// 	url: 'https://linr.app/',
+		// });
+
 		this.tell('Hey ' + this.$inputs.name.value + ', nice to meet you!');
 	},
 });
